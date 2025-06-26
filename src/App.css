@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.6s ease, color 0.6s ease;
+  padding: 2rem;
+}
+
+/* Theme Colors */
+.light-theme {
+  background: linear-gradient(135deg, #ffffff, #e0f7fa);
+  color: #111;
+}
+
+.dark-theme {
+  background: linear-gradient(135deg, #000000, #1c1c1c);
+  color: #fefefe;
+}
+
+.content {
+  text-align: center;
+}
+
+/* Title Styles */
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Pulse Glow Animation */
+.glow-effect {
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4;
+  }
+  50% {
+    text-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+  }
+  100% {
+    text-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4;
+  }
+}
+
+/* Description Text */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Button */
+.theme-button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme-button:hover {
+  background-color: #3730a3;
+}
+
+/* Time Display */
+.time-display {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: inherit;
+}
